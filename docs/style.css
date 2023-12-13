@@ -1,4 +1,3 @@
-@charset "UTF-8";
 * {
   box-sizing: border-box;
   margin: 0;
@@ -76,7 +75,7 @@ nav.landing-nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: -webkit-cross-fade(url(/images/swooshing.png), url(/images/laptop.jpg), 0.5);
+  background-image: -webkit-cross-fade(url(/docs/images/swooshing.png), url(/docs/images/laptop.jpg), 0.5);
   background-size: cover;
 }
 nav.landing-nav ul.landing-ul {
@@ -266,10 +265,10 @@ main.main-portfolio .choose-portfolio-section h3.heading-portfolio a:hover {
   text-decoration: underline;
 }
 main.main-portfolio .choose-portfolio-section #hand-green {
-  cursor: url(/assets/small-stuff/svg/hand-grün-lefty.svg), auto;
+  cursor: url(/docs/images/green_hand_left.svg), auto;
 }
 main.main-portfolio .choose-portfolio-section #hand-lila {
-  cursor: url(/assets/small-stuff/svg/cursor-purple.svg), auto;
+  cursor: url(/docs/images/hand_lila_right.svg), auto;
 }
 
 .header-contact {
