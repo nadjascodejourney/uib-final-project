@@ -759,9 +759,17 @@ footer .toTop-btn {
   .art-body section.art-gridcontainer .round-btn {
     border: 2px solid;
     width: 30%;
-    padding: 5px 8px;
     grid-column: 9/10;
     grid-row: 7/8;
+    width: 70px;
+    background-color: hsla(140, 76%, 82%, 0.7);
+    padding: 5px 7px;
+  }
+  .art-body section.art-gridcontainer .round-btn a {
+    text-decoration: none;
+    color: hsl(180, 10%, 6%);
+    font-family: "Courier New", Courier, monospace;
+    font-size: 1.1rem;
   }
   .art-body figcaption {
     margin-top: 15px;
@@ -889,6 +897,18 @@ footer .toTop-btn {
   section.web-gridcontainer .webproject12 {
     grid-column: 4/5;
     grid-row: 2/3;
+  }
+  .round-btn-web {
+    width: 70px;
+    background-color: hsla(140, 76%, 82%, 0.7);
+    padding: 5px 7px;
+    margin: 0 auto;
+  }
+  .round-btn-web a {
+    text-decoration: none;
+    color: hsl(180, 10%, 6%);
+    font-family: "Courier New", Courier, monospace;
+    font-size: 1.1rem;
   }
 }
 
