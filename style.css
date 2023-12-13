@@ -76,7 +76,7 @@ nav.landing-nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: -webkit-cross-fade(url(/assets/imgWebsite/png/swooshing.png), url(assets/mockupsWebsite/laptop.jpg), 0.5);
+  background-image: -webkit-cross-fade(url(/images/swooshing.png), url(/images/laptop.jpg), 0.5);
   background-size: cover;
 }
 nav.landing-nav ul.landing-ul {
@@ -758,7 +758,6 @@ footer .toTop-btn {
     grid-row: 5/6;
   }
   .art-body section.art-gridcontainer .round-btn {
-    background-color: hsla(140, 76%, 82%, 0.7);
     border: 2px solid;
     width: 30%;
     padding: 5px 8px;

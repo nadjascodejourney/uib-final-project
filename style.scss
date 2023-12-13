@@ -57,8 +57,8 @@ nav.landing-nav {
   // fading image
   // Chrome
     -webkit-cross-fade(
-    url(/assets/imgWebsite/png/swooshing.png),
-    url(assets/mockupsWebsite/laptop.jpg),
+    url(/images/swooshing.png),
+    url(/images/laptop.jpg),
     0.5
   );
   background-size: cover;
