@@ -57,8 +57,8 @@ nav.landing-nav {
   // fading image
   // Chrome
     -webkit-cross-fade(
-    url(/docs/images/swooshing.png),
-    url(/docs/images/laptop.jpg),
+    url("/docs/images/swooshing.png"),
+    url("/docs/images/laptop.jpg"),
     0.5
   );
   background-size: cover;
@@ -250,12 +250,12 @@ main.main-portfolio {
       }
     }
     #hand-green {
-      cursor: url(/docs/images/green_hand_left.svg), auto;
+      cursor: url(images/green_hand_left.svg), auto;
     }
 
     // lila hand funktioniert noch nicht, wieso?
     #hand-lila {
-      cursor: url(/docs/images/hand_lila_right.svg), auto;
+      cursor: url(images/hand_lila_right.svg), auto;
     }
   }
 }
