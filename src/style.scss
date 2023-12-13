@@ -110,6 +110,7 @@ section.mission {
     display: inline-block;
   }
 
+  // das hier wäre Code, mit dem Worte wie getippt aussehen (dafür müsste dann in das div in Zeile 66 das Wort geschrieben werden (hier "code", steps für 4 Buchstaben)
   // div.typed-out {
   //   font-family: monospace;
   //   font-size: 1.1rem;
@@ -119,7 +120,6 @@ section.mission {
   //   white-space: nowrap;
   //   animation: typing 1.5s steps(4) forwards;
   // }
-
   // @keyframes typing {
   //   from {
   //     width: 0;
@@ -132,11 +132,6 @@ section.mission {
   div.typed-out {
     font-family: monospace;
     font-size: 1.1rem;
-    // overflow: hidden;
-    // height: 1.1rem;
-    // word-wrap: break-word;
-    // white-space: nowrap;
-    // animation: typing 1.5s steps(4) forwards;
   }
 
   .typed-out:before {
@@ -509,7 +504,7 @@ $layout-bp-desktop: 1260px;
         font-size: 3rem;
       }
       div.typed-out {
-        font-size: 2rem;
+        font-size: 2.2rem;
         height: 2rem;
       }
     }
@@ -621,7 +616,6 @@ $layout-bp-desktop: 1260px;
 // Styling SUBSITES:
 
 // Art Portfolio
-
 // mobile
 .art-body {
   header.art-header {
@@ -700,9 +694,7 @@ $layout-bp-desktop: 1260px;
     }
   }
 }
-
-// Responsive: Desktop
-
+// responsive art-portfolio desktop
 $layout-bp-desktop: 1260px;
 @media (min-width: $layout-bp-desktop) {
   .art-body {
@@ -873,9 +865,7 @@ $layout-bp-desktop: 1260px;
 }
 
 // Web Portfolio
-
 // mobile
-
 .web-body {
   header.web-header {
     @include header-chapter;
@@ -884,9 +874,7 @@ $layout-bp-desktop: 1260px;
     @include radial-gradient(#9396f3, #f9ffa6, $spot-main-color);
   }
 }
-
 // desktop
-
 $layout-bp-desktop: 1260px;
 @media (min-width: $layout-bp-desktop) {
   .web-body {
@@ -1043,4 +1031,5 @@ $layout-bp-desktop: 1260px;
 }
 
 // Vita
+
 // Imprint & Datapolicy
