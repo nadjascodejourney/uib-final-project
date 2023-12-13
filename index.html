@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Nadja Probst - Webdevelopment, Webdesign, Illustration and Art
+    </title>
+  <link rel="stylesheet" href="style.css">
+  
+    <!-- favicon -->
+     <!-- fontawesome script -->
+    <script src="https://kit.fontawesome.com/0670721770.js" crossorigin="anonymous"></script>
+    <!-- fonts -->
+   
+  </head>
+
+  <body>
+    <!-- LANDING PAGE (oberster Bereich) -->
+    <!-- Logo/Name -->
+  
+    <header class="header-container">
+      <h1>Nadja Probst</h1>
+      <a class="home-click" href="#"><img class="nadja-probst" src="/images/logo.png" alt=""></a>
+      
+      <div class="menu-btn-wrapper">
+        <input type="checkbox" id="menu-checkbox" />
+        <!-- Label fungiert als Button, um die Checkbox auszulösen -->
+        <label class="label-btn" for="menu-checkbox">
+          <img
+            class="main-menu-btn-img"
+            src="/images/btn.png"
+            alt=""
+          />
+        </label>
+        <!-- Navigation, die basierend auf Checkbox-Status angezeigt bzw versteckt werden soll: -->
+        <nav class="main-menu-btn-nav">
+          <ul>
+            <li class="main-menu-btn-li"><a class="main-menu-btn-a" href="#">Home</a></li>
+            <li class="main-menu-btn-li"><a class="main-menu-btn-a" href="#about-jump">About</a></li>
+            <li class="main-menu-btn-li"><a class="main-menu-btn-a" href="#portfolio-jump">Portfolio</a></li>
+            <li class="main-menu-btn-li"><a class="main-menu-btn-a" href="#contact-jump">Contact</a></li>
+          </ul>
+        </nav>
+        </div>
+      </header>
+
+      
+    <!-- mainbereich: landing-page -->
+    <main class="header-landing">
+      
+    <!-- Navigationsbereich im Zentrum mit ul und li-->
+      <nav class="landing-nav">
+        <ul class="landing-ul">
+          <li class="landing-li landing-about">
+            <a class="link-about" href="#about-jump">About</a></li>
+          <li class="landing-li landing-portfolio"><a class="link-portfolio" href="#portfolio-jump">Portfolio</a></li>
+          <li class="landing-li landing-contact"><a class="link-contact"  href="#contact-jump">Contact</a></li>
+        </ul>
+      </nav>
+  
+      <!-- Textbereich: Mission Statement -->
+      <section class="mission">
+      <div class="mission-statement">I
+        <div class="container">
+          <div class="code typed-out">code</div>
+          <!-- <div class="code typed-out">draw</div>
+          <div class="code typed-out">illustrate</div>
+          <div class="code typed-out">develope</div>
+          <div class="code typed-out">create</div> -->
+
+
+        </div><br>
+
+        <!-- <div class="container"><div class="code typed-out">draw</div></div><br>
+
+        <div class="container"><div class="code typed-out">illustrate</div></div><br>
+
+        <div class="container"><div class="code typed-out">develope</div></div><br>
+
+        <div class="container"><div class="code typed-out">create</div></div>  -->        
+        <p>artsy websites,<wbr> vivid paintings & <wbr> 
+        delightful illustration</p>
+      </section>
+    
+    </main>
+
+    <!-- _________________________________________________________________ -->
+
+    <!-- ABOUT -->
+
+    <!-- header: about-Bereich mit Kapitelbox und nav-bar oben rechts => einzelne Bereiche mit Sprungmarken verlinken, ggf. bei Portfolio auf Unterseite verlinken-->
+  <!-- <main> -->
+
+    <header class="header-chapter header-about" id="about-jump">
+      <img class="spot-header" src="/images/about_chapter.svg" alt="">
+      <h2 class="heading-chapter">About</h2>
+    </header>
+
+    <main class="about-main">
+
+<!-- hier vorerst Platzhalter für Profilbild -->
+<section class="profile-text-wrapper">
+
+  <img class="profile-img" src="/images/profilpicture.png" alt="" />
+  
+<p class="profile-text"> 
+<span>Hey there!</span> <span>🚀🖌️🎨</span> 
+<br>
+<br> 
+My name is Nadja and I am a painter, illustrator and aspiring web developer & webdesigner. 
+I thrive in the art of code and design, seamlessly moving between the two worlds. My focus is on crafting webexperiences that blend aesthetics with functionality as well as painting and drawing visual worlds that make you dream. Join me at the crossroads of art and code, where each stroke and line creates a unique (online) masterpiece. <br> Do you want to know more? Hit the small button to check out my vita:
+<br>
+<a class="more-btn-vita" href="/more-about.html"><img id="wobble" class="more-about" src="/images/btn.png" alt=""></a></img>
+</p>
+</section>
+
+
+    </main>
+
+  
+
+    <!-- _________________________________________________________________ -->
+    <!-- _________________________________________________________________ -->
+
+    <!-- PORTFOLIO -->
+
+    <!-- header: portfolio-bereich mit Kapitelbox und daneben größerer Button, der das Hauptmenü nochmal ausklappen kann on-hover bzw. on-click; Verlinkungen bzw. Sprungmarken nicht vergessen! -->
+    <header class="header-chapter header-portfolio" id="portfolio-jump">
+      <img class="spot-header" src="/images/portfolio_chapter.svg" alt="">
+      <h2 class="heading-chapter">Portfolio</h2>
+
+
+
+    </header>
+
+    <main class="main-portfolio">
+    <section class="choose-portfolio-section">
+      <!-- individualisierter pointer on:hover auf die heading -->
+
+      <h3 class="heading-portfolio">
+        <a id="hand-green" href="/art-portfolio.html">painting & illustration</a>
+      </h3>
+
+  
+      <h3 class="heading-portfolio">
+        <a id="hand-green" href="/web-portfolio.html">webdevelopement & design</a>
+      </h3>
+
+    </section>
+    </main>
+    <!-- _________________________________________________________________ 
+      
+      
+    _________________________________________________________________ -->
+
+    <!-- CONTACT -->
+
+    <!-- headerbereich mit Kapitelbox und daneben wieder Button, über denn man das Hauptmenü wieder aufklappen kann -->
+    <header class="header-chapter header-contact" id="contact-jump">
+      <img class="spot-header" src="/images/contact_chapter.svg" alt="">
+      <h2 class="heading-chapter">Contact</h2>
+    </header>
+
+    <main class="main-contact">
+
+      <section class="call-soMe">
+        <div class="relative-soMe-container">
+    <!-- h3 Überschrift mit Call-to-Action bzgl. Formular -->
+    <h3 class="heading-call-to-action">
+      Love to hear from you! <br />Let´s get in touch.
+    </h3>
+
+    <!-- container mit SoMe Profilen (Fontawesome, Verlinkungen) -->
+    <!-- ist oben bereits vorhanden, gleiches html nutzen und nur einmal stylen nötig -->
+    <div class="soMe-icons">
+      <ul class="ul-icons">
+        <li class="li-icons instagram"><a href="https://www.instagram.com/nadjaschwarzenegger/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+        <li class="li-icons github"><a href="https://github.com/nadjascodejourney" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+        <li class="li-icons discord"><a href="https://discordapp.com/users/1133720962093822054" target="_blank"><i class="fa-brands fa-discord"></i></a></li>
+        <li class="li-icons linkedin"><a href=""><i class="fa-brands fa-linkedin"></i></a></li>
+      </ul> </div>
+    </div>
+
+    </section>
+
+
+
+    <!-- Formular: input text, input email, input textarea, submit, placeholdertexte -->
+
+    <section class="formular">
+      <form
+        action="https://formspree.io/f/xnqkrlky"
+        target="_blank"
+        method="POST">
+
+        <fieldset>
+        <label for="username">What´s your name?</label>
+        <input type="text" name="name" id="username" required placeholder="Please fill in your full name">
+  
+        <label for="email">Which e-mail address can I use to contact you?</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Please enter your email"
+            minlength="5"
+            required
+          />
+        
+          <label for="txt">Tell me more:</label>
+          <textarea
+            placeholder="Please let me know how I can help you"
+            id="txt"
+            minlength="1"
+            name="textarea"
+          ></textarea>
+
+           <!-- Senden btn -->
+        <button onclick="maAlert()" id="submit-form">send it to me</button>
+          <!-- ggf. hier btn mit eigener Handgrafik, falls mit CSS kein custom pointer möglich ist -->
+        </fieldset>
+      </form>
+    </section>
+
+  </main>
+    <!-- _________________________________________________________________ -->
+
+    <!-- FOOTER -->
+    <!-- Container für Text, Links, Sitemap und nach-oben-btn -->
+
+<footer>
+  
+  <div class="info-footer-wrapper" >
+    <p>2023 &copy; Nadja Probst</p>
+    <p>all rights reserved</p>
+    <p><a href="/imprint.html">imprint & privacy policy</a></p>
+    </div>
+   
+    <aside class="thanks">
+    <p>special thanks to Iman & Christian from</p><a class="credit" href="https://www.digitalcareerinstitute.org/" target="_blank"><b>DCI</b></a>
+    </aside>
+  </div>
+
+  <!-- evtl. noch mit input und label versehen, damit es auf dem handy funktioniert -->
+  <button class="toTop-btn">
+    <a href="#">
+      <i class="fa-solid fa-arrow-up"></i>
+    </a>
+  </button>
+
+</footer>
+
+  </body>
+</html>

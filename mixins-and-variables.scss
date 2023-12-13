@@ -1,0 +1,261 @@
+// Farb-Variablen
+// Hauptgrün mit 70% Transparenz (0.7):
+$spot-main-color: hsla(140, 76%, 82%, 0.7);
+$detail-violett: hsla(246, 65%, 67%, 1);
+// Text
+$main-text-color: hsl(0, 0%, 100%);
+$second-text-color: hsl(180, 10%, 6%);
+$mini-box-color: hsla(125, 36%, 57%, 0.5);
+
+// @mixin art-gradient {
+//   background-color: #a960ee;
+//   background-image: -webkit-gradient(
+//     radial,
+//     center center,
+//     0,
+//     center center,
+//     570,
+//     from(#a960ee),
+//     to(#90e0ff)
+//   );
+// }
+
+@mixin radial-gradient($from, $over, $to) {
+  background: -moz-radial-gradient(
+    center,
+    circle cover,
+    $from 0%,
+    $over 50%,
+    $to 100%
+  );
+  background: -webkit-gradient(
+    radial,
+    center center,
+    0px,
+    center center,
+    100%,
+    color-stop(0%, $from),
+    color-stop(50%, $over),
+    color-stop(100%, $to)
+  );
+  background: -webkit-radial-gradient(
+    center,
+    circle cover,
+    $from 0%,
+    $over 50%,
+    $to 100%
+  );
+  background: -o-radial-gradient(
+    center,
+    circle cover,
+    $from 0%,
+    $over 50%,
+    $to 100%
+  );
+  background: -ms-radial-gradient(
+    center,
+    circle cover,
+    $from 0%,
+    $over 50%,
+    $to 100%
+  );
+  background: radial-gradient(
+    center,
+    circle cover,
+    $from 0%,
+    $over 50%,
+    $to 100%
+  );
+  background-color: $from;
+}
+
+@mixin main-menu-btn {
+  position: absolute;
+  top: 3rem;
+  right: 1.5rem;
+
+  .main-menu-btn-img {
+    width: 50%;
+    float: right;
+  }
+
+  .main-menu-btn-nav {
+    display: none;
+    position: absolute;
+
+    .main-menu-btn-nav > ul {
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+    }
+
+    .main-menu-btn-a {
+      text-decoration: none;
+      color: $second-text-color;
+      display: inline-block;
+      font-family: "Courier New", Courier, monospace;
+      font-size: 1rem;
+      line-height: 1.7rem;
+    }
+
+    .main-menu-btn-nav > ul > .main-menu-btn-li > a:hover {
+      text-decoration: underline;
+    }
+  }
+
+  #menu-checkbox:checked ~ .main-menu-btn-nav {
+    display: block;
+  }
+
+  #menu-checkbox {
+    display: none;
+  }
+}
+
+@mixin main-menu-btn-big {
+  top: 4rem;
+  right: 3rem;
+
+  .main-menu-btn-img {
+    width: 80%;
+    float: right;
+  }
+
+  .label-btn {
+    position: relative;
+  }
+
+  .main-menu-btn-nav {
+    display: none;
+    right: 90%;
+    position: absolute;
+
+    .main-menu-btn-nav > ul {
+      list-style-type: none;
+      position: absolute;
+    }
+
+    .main-menu-btn-a {
+      text-decoration: none;
+      color: $second-text-color;
+      display: inline-block;
+      font-family: "Courier New", Courier, monospace;
+      font-size: 1rem;
+      line-height: 1.7rem;
+    }
+
+    .main-menu-btn-nav > ul > .main-menu-btn-li > a:hover {
+      text-decoration: underline;
+    }
+  }
+
+  #menu-checkbox:checked ~ .main-menu-btn-nav {
+    display: block;
+  }
+
+  #menu-checkbox {
+    display: none;
+  }
+}
+
+@mixin header-chapter {
+  height: 200px;
+  // relative, damit sich spot und heading nach dem header ausrichten
+  position: relative;
+  // damit grüner spot nicht aus dem header rausschaut
+  overflow: hidden;
+  // alle header haben box-shadow
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+@mixin about-header {
+  // Styling für spot im jeweiligen Kapitelheader
+  img.spot-header {
+    position: absolute;
+    left: -20px;
+    top: 40px;
+    width: 350px;
+  }
+  // Farbverlauf im Hintergrund
+  background: linear-gradient(
+    90deg,
+    hsla(0, 100%, 89%, 0.5) -2.52%,
+    hsla(103, 76%, 90%, 0.5) 106.13%
+  );
+
+  h2 {
+    color: $main-text-color;
+    font-family: Source Code Pro;
+    font-size: 90px;
+    transform: rotate(-10deg);
+    position: absolute;
+    top: 70px;
+    left: 25px;
+  }
+  // h2 im jeweiligen mixin / kapitel individuell anpassen, wegen unterschiedlicher Schriftgröße
+}
+
+@mixin portfolio-header {
+  img.spot-header {
+    position: absolute;
+    left: -20px;
+    top: 70px;
+    width: 400px;
+  }
+  background: linear-gradient(
+    90deg,
+    hsla(101, 77%, 76%, 0.44) 0%,
+    hsla(206, 73%, 73%, 0.1) 53.12%,
+    hsla(238, 100%, 73%, 0.44) 100%
+  );
+  h2 {
+    color: $main-text-color;
+    font-family: Source Code Pro;
+    font-size: 80px;
+    transform: rotate(-6deg);
+    position: absolute;
+    top: 100px;
+    left: 30px;
+  }
+}
+
+@mixin portfolio-bg {
+  background: linear-gradient(
+    180deg,
+    hsla(161, 69%, 78%, 0.6) 0%,
+    hsla(241, 62%, 74%, 0.62) 100%
+  );
+}
+
+@mixin contact-header {
+  img.spot-header {
+    position: absolute;
+    left: -20px;
+    top: 75px;
+    width: 350px;
+  }
+
+  background: linear-gradient(
+    89deg,
+    rgba(239, 183, 150, 0.5) 2.17%,
+    rgba(255, 201, 201, 0) 119.78%
+  );
+
+  h2 {
+    color: $main-text-color;
+    font-family: Source Code Pro;
+    font-size: 80px;
+    transform: rotate(-6deg);
+    position: absolute;
+    top: 100px;
+    left: 20px;
+  }
+}
+
+@mixin contact-bg {
+  background: linear-gradient(
+    89deg,
+    hsla(66, 100%, 94%, 0.5) 2%,
+    hsla(0, 100%, 89%, 0) 120%
+  );
+}
