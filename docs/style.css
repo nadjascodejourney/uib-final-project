@@ -271,7 +271,7 @@ main.main-portfolio .choose-portfolio-section {
 main.main-portfolio .choose-portfolio-section h3.heading-portfolio-art {
   color: hsl(180, 10%, 6%);
   font-family: monospace;
-  font-size: 36px;
+  font-size: 24px;
 }
 main.main-portfolio .choose-portfolio-section h3.heading-portfolio-art:hover {
   transform: translateX(-100px);
@@ -289,16 +289,16 @@ main.main-portfolio .choose-portfolio-section #hand-green {
 main.main-portfolio h3.heading-portfolio-web {
   color: hsl(180, 10%, 6%);
   font-family: monospace;
-  font-size: 36px;
+  font-size: 24px;
 }
 main.main-portfolio h3.heading-portfolio-web:hover {
   transform: translateX(100px);
 }
-main.main-portfolio h3.heading-portfolio-web #hand-lila {
+main.main-portfolio h3.heading-portfolio-web a {
   color: black;
   text-decoration: none;
 }
-main.main-portfolio h3.heading-portfolio-web #hand-lila:hover {
+main.main-portfolio h3.heading-portfolio-web a:hover {
   text-decoration: underline;
 }
 main.main-portfolio h3.heading-portfolio-web #hand-lila {

@@ -275,7 +275,7 @@ main.main-portfolio {
     h3.heading-portfolio-art {
       color: $second-text-color;
       font-family: monospace;
-      font-size: 36px;
+      font-size: 24px;
 
       &:hover {
         transform: translateX(-100px);
@@ -298,12 +298,12 @@ main.main-portfolio {
   h3.heading-portfolio-web {
     color: $second-text-color;
     font-family: monospace;
-    font-size: 36px;
+    font-size: 24px;
     &:hover {
       transform: translateX(100px);
     }
 
-    #hand-lila {
+    a {
       color: black;
       text-decoration: none;
       &:hover {
