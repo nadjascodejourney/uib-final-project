@@ -19,7 +19,7 @@ header.header-container {
   background: #fff;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   width: 100vw;
-  height: 20vh;
+  height: 25vh;
   transform: skewY(-2deg);
   transform-origin: top left;
   z-index: 1;
@@ -72,13 +72,16 @@ nav.landing-nav {
     border-radius: 5px;
 
     .link-about {
-      color: hsl(300, 98%, 63%);
+      color: #f091f0;
+      text-shadow: 1px 1px 2px grey;
     }
     .link-portfolio {
-      color: hsl(180, 100%, 50%);
+      color: hsl(180, 100%, 78%);
+      text-shadow: 1px 1px 2px grey;
     }
     .link-contact {
       color: hsl(64, 65%, 73%);
+      text-shadow: 1px 1px 2px grey;
     }
   }
 
@@ -135,23 +138,24 @@ section.mission {
   }
 
   .typed-out:before {
-    content: "code";
+    content: "";
     animation: animate 5s alternate-reverse infinite;
   }
   @keyframes animate {
-    0% {
+    0%,
+    100% {
       content: "code";
     }
-    25% {
+    20% {
       content: "paint";
     }
-    50% {
+    40% {
       content: "illustrate";
     }
-    75% {
+    60% {
       content: "develope";
     }
-    95% {
+    80% {
       content: "create";
     }
   }
@@ -317,11 +321,11 @@ main.main-contact {
 
     @keyframes scale {
       0% {
-        transform: scale(0.5) rotate(5deg);
+        transform: scale(0.5);
       }
 
       100% {
-        transform: scale(1) rotate(5deg);
+        transform: scale(1);
       }
     }
 
@@ -335,10 +339,10 @@ main.main-contact {
       align-items: center;
       gap: 8px;
       padding: 20px;
-      box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+      box-shadow: 0px 4px 4px 0px #00000040;
 
       i {
-        color: black;
+        color: $second-text-color;
         font-size: 1.5rem;
       }
 
@@ -363,13 +367,15 @@ main.main-contact {
 
       #submit-form {
         width: fit-content;
-        margin: 0 auto;
         margin-top: 20px;
+        margin-left: 85%;
         padding: 10px 20px;
         background-color: $mini-box-color;
         border: none;
         border-radius: 5px;
         box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+        font-size: 1rem;
+        font-family: "Courier New", Courier, monospace;
       }
     }
   }
@@ -468,7 +474,8 @@ $layout-bp-desktop: 1260px;
       padding: 1.5rem 2rem;
 
       .nadja-probst {
-        width: 130px;
+        margin-left: 50px;
+        width: 150px;
       }
       .menu-btn-wrapper {
         @include main-menu-btn-big;

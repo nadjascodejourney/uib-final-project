@@ -44,3 +44,17 @@
 - Responsive Design mit SASS: mehrere .scss dateien erstellen und dann in eine gemeinsame Datei importieren oder lieber alles in einer Datei?
 
 - ineinander übergehende Bilder über backgroundimage in CSS oder wie lösen? => ja mit cross-fade (habe ich aber dann vorerst weggelassen, da github pages damit Probleme hat)
+
+## Weitere ToDos (nach Präsentation)
+
+- SCSS "aufräumen": Insbesondere bei den mediaqueries könnte man manches noch kürzen und zusammenfassen, damit es nicht doppelt vorkommt; zudem schauen, was man ggf. als mixin in der extra scss file zusammenfassen kann
+
+- Styling weiter ausbauen: Formular (so gut wie gar nicht gestyled bisher), Unterseiten (Vita, Impressum, Webportfolio)
+
+- Responsive Ansichten verbessern, erweitern
+
+- Barrierefreiheit und UX verbessern: Kapitelüberschriften zu hell; Alternativtexte, Bilddateien verkleinern (aktuell noch zu groß => kleinere Ansichten für Vorschau und bei Klick auf jeweiliges Bild größere File mit besserer Qualität laden (später mit JS)); Buttons mit Inhalt sind teilweise zu klein bzw. Inhalt darin zu dicht aufeinander => überarbeiten!
+
+- Kapitelhöhen nochmal so anpassen, dass Sprung auf das jeweilige Kapitel den jeweiligen Header etwas mehr abdeckt;
+
+- Feedback aus meiner Weiterbildungsklasse einbauen, wo möglich
