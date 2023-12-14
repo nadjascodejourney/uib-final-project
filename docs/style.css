@@ -268,23 +268,41 @@ main.main-portfolio .choose-portfolio-section {
   align-items: center;
   gap: 6rem;
 }
-main.main-portfolio .choose-portfolio-section h3.heading-portfolio {
-  color: black;
+main.main-portfolio .choose-portfolio-section h3.heading-portfolio-art {
+  color: hsl(180, 10%, 6%);
   font-family: monospace;
-  font-size: 24px;
+  font-size: 36px;
 }
-main.main-portfolio .choose-portfolio-section h3.heading-portfolio a {
+main.main-portfolio .choose-portfolio-section h3.heading-portfolio-art:hover {
+  transform: translateX(-100px);
+}
+main.main-portfolio .choose-portfolio-section h3.heading-portfolio-art a {
   color: black;
   text-decoration: none;
 }
-main.main-portfolio .choose-portfolio-section h3.heading-portfolio a:hover {
+main.main-portfolio .choose-portfolio-section h3.heading-portfolio-art a:hover {
   text-decoration: underline;
 }
 main.main-portfolio .choose-portfolio-section #hand-green {
   cursor: url(./images/green_hand_left.svg), auto;
 }
-main.main-portfolio .choose-portfolio-section #hand-lila {
-  cursor: url(./images/hand_lila_right.svg), auto;
+main.main-portfolio h3.heading-portfolio-web {
+  color: hsl(180, 10%, 6%);
+  font-family: monospace;
+  font-size: 36px;
+}
+main.main-portfolio h3.heading-portfolio-web:hover {
+  transform: translateX(100px);
+}
+main.main-portfolio h3.heading-portfolio-web #hand-lila {
+  color: black;
+  text-decoration: none;
+}
+main.main-portfolio h3.heading-portfolio-web #hand-lila:hover {
+  text-decoration: underline;
+}
+main.main-portfolio h3.heading-portfolio-web #hand-lila {
+  cursor: url(/docs/images/green_hand_left.svg), auto;
 }
 
 .header-contact {
@@ -565,6 +583,9 @@ footer .toTop-btn {
     padding: 2%;
     float: right;
   }
+  body .main-portfolio h3.heading-portfolio:hover {
+    transform: translateX(-50px);
+  }
   body .main-contact {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -605,6 +626,12 @@ footer .toTop-btn {
   }
   body .main-contact section.formular form {
     width: 30vw;
+  }
+  body .main-contact .focusfeld:focus {
+    background-color: #c8fad7;
+  }
+  body .main-contact textarea:focus {
+    background-color: #fce5a5;
   }
 }
 .art-body header.art-header {

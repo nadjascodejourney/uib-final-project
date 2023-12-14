@@ -255,6 +255,7 @@ ul {
   @include header-chapter;
   @include portfolio-header;
 }
+
 main.main-portfolio {
   @include portfolio-bg;
   height: 60vh;
@@ -271,10 +272,14 @@ main.main-portfolio {
     align-items: center;
     gap: 6rem;
 
-    h3.heading-portfolio {
-      color: black;
+    h3.heading-portfolio-art {
+      color: $second-text-color;
       font-family: monospace;
-      font-size: 24px;
+      font-size: 36px;
+
+      &:hover {
+        transform: translateX(-100px);
+      }
 
       a {
         color: black;
@@ -284,13 +289,32 @@ main.main-portfolio {
         }
       }
     }
+
     #hand-green {
       cursor: url(./images/green_hand_left.svg), auto;
+    }
+  }
+
+  h3.heading-portfolio-web {
+    color: $second-text-color;
+    font-family: monospace;
+    font-size: 36px;
+    &:hover {
+      transform: translateX(100px);
+    }
+
+    #hand-lila {
+      color: black;
+      text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+      }
     }
 
     // lila hand funktioniert noch nicht, wieso?
     #hand-lila {
-      cursor: url(./images/hand_lila_right.svg), auto;
+      // momentan geht nur grüne hand
+      cursor: url(/docs/images/green_hand_left.svg), auto;
     }
   }
 }
@@ -465,6 +489,7 @@ $layout-breakpoint-tablet: 768px;
     }
   }
 }
+// hier ggf. noch weiterarbeiten
 
 /* 2. Responsive: Laptop or bigger */
 $layout-bp-desktop: 1260px;
@@ -538,6 +563,12 @@ $layout-bp-desktop: 1260px;
       }
     }
 
+    .main-portfolio {
+      h3.heading-portfolio:hover {
+        transform: translateX(-50px);
+      }
+    }
+
     .main-contact {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
@@ -584,6 +615,14 @@ $layout-bp-desktop: 1260px;
         form {
           width: 30vw;
         }
+      }
+
+      .focusfeld:focus {
+        background-color: #c8fad7;
+      }
+
+      textarea:focus {
+        background-color: #fce5a5;
       }
     }
 
